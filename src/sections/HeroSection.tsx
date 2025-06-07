@@ -33,11 +33,11 @@ const HeroSection: React.FC = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
-            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-500">John Doe</span>
+            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-500">Song Zhiheng</span>
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-gray-700 dark:text-gray-300">
-            Full-Stack Developer crafting beautiful, functional & user-centered digital experiences
+            Product Manager & Data Analysis  & Large Model Algorithms
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">

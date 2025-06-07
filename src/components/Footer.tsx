@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
               <div className="h-8 w-8 rounded-full bg-gradient-to-r from-teal-500 to-blue-500 flex items-center justify-center">
                 <span className="text-white font-bold text-sm">JD</span>
               </div>
-              <span className="text-xl font-bold">John Doe</span>
+              <span className="text-xl font-bold">Song Zhiheng</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
               Full-stack developer passionate about creating beautiful, 
@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} John Doe. All rights reserved.
+            © {currentYear} Song Zhiheng. All rights reserved.
           </p>
           <p className="text-gray-400 text-sm flex items-center mt-4 md:mt-0">
             Made with <Heart size={16} className="mx-1 text-red-500" /> and lots of coffee
