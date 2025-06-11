@@ -1,6 +1,8 @@
 import React from 'react';
 import { Code, Book, Heart, Users } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading';
+import song from '../assets/song.jpg'; 
+
 
 const AboutSection: React.FC = () => {
   const stats = [
@@ -45,11 +47,11 @@ const AboutSection: React.FC = () => {
           <div className="relative">
             <div className="aspect-square rounded-2xl bg-gradient-to-br from-teal-400 to-blue-500 p-1">
               <div className="w-full h-full rounded-2xl bg-gray-100 dark:bg-gray-700 overflow-hidden">
-                <img 
-                  src="src/assert/song.jpg" 
-                  alt="Profile" 
-                  className="w-full h-full object-cover object-top rounded-2xl"
-                />
+              <img 
+                src={song} 
+                alt="Profile" 
+                className="w-full h-full object-cover object-top rounded-2xl"
+              />
               </div>
             </div>
           </div>
