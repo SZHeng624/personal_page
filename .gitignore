@@ -23,3 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 .env
+# 忽略开发用 index.html
+index.html
