@@ -3,27 +3,47 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/personal_page/', // 匹配 GitHub Pages 子路径
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
-  build: {
-    outDir: 'dist', // 明确指定输出目录
-    emptyOutDir: true, // 构建前清空输出目录
-    sourcemap: true, // 可选：生成 sourcemap 便于调试
-    rollupOptions: {
-      output: {
-        assetFileNames: 'assets/[name].[hash].[ext]', // 静态资源命名规则
-        entryFileNames: 'assets/[name].[hash].js', // 入口文件命名规则
-      }
+  base: '/personal_page/', // 确保与GitHub仓库名一致
+  
+  // 关键修复配置
+  resolve: {
+    alias: {
+      '@': '/src' // 添加路径别名方便引用
     }
   },
+
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    emptyOutDir: true,
+    sourcemap: false, // 生产环境建议关闭
+    
+    // 增强的rollup配置
+    rollupOptions: {
+      input: {
+        main: './index.html' // 显式指定HTML入口
+      },
+      output: {
+        assetFileNames: 'assets/[name]-[hash][extname]', // 优化资源命名
+        entryFileNames: 'assets/[name]-[hash].js',
+        chunkFileNames: 'assets/[name]-[hash].js'
+      }
+    },
+    
+    // 构建优化
+    minify: 'terser', // 启用代码压缩
+    cssCodeSplit: true // CSS代码分割
+  },
+
   server: {
-    port: 3000, // 本地开发服务器端口
-    open: true // 启动时自动打开浏览器
+    port: 3000,
+    open: true,
+    strictPort: true // 端口占用时直接报错
+  },
+
+  // 预构建排除
+  optimizeDeps: {
+    exclude: ['lucide-react'],
+    include: ['react', 'react-dom'] // 显式包含核心依赖
   }
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 21e9e5f438c77680382bfe89672ce975b0bb1f96
