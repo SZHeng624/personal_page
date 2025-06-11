@@ -106,11 +106,11 @@ const ContactSection: React.FC = () => {
             {/* Contact Details */}
             <div className="space-y-4">
               {contactInfo.map((info, index) => (
-                <a
-                  key={index}
-                  href={info.href}
-                  target={info.href.startsWith('http') ? '_blank' : undefined}
-                  rel={info.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+              <a
+                key={index}
+                href={info.href || undefined}
+                target={info.href?.startsWith('http') ? '_blank' : undefined}
+                rel={info.href?.startsWith('http') ? 'noopener noreferrer' : undefined}
                   className="flex items-center p-4 bg-gray-50 dark:bg-gray-800 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors group"
                 >
                   <div className="flex items-center justify-center w-12 h-12 bg-teal-100 dark:bg-teal-900 text-teal-600 dark:text-teal-400 rounded-lg mr-4 group-hover:scale-110 transition-transform">
