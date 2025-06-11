@@ -13,7 +13,7 @@ export default defineConfig({
   },
 
   build: {
-    outDir: 'dist',
+    outDir: 'docs',
     assetsDir: 'assets',
     emptyOutDir: true,
     sourcemap: false, // 生产环境建议关闭
