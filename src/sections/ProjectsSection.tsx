@@ -60,7 +60,7 @@ const ProjectsSection: React.FC = () => {
       image: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80',
       technologies: ['Figma', 'Modao', 'AIGC', 'UX Design', 'Product Management'],
       featured: false,
-      type: 'product'
+      type: 'research'
     },
     {
       id: 6,
@@ -70,7 +70,27 @@ const ProjectsSection: React.FC = () => {
       technologies: ['JavaScript', 'SPSS', 'User Research', 'Interaction Design'],
       featured: false,
       type: 'research'
-    }
+    },
+    {
+  id: 7,
+  title: 'Financial Risk Chain Reasoning System',
+  description: 'Constructed a financial risk knowledge graph and designed chain-of-thought reasoning paths. Developed risk path mining and reasoning algorithms with financial sentiment enhancement based on LLMs.',
+  image: 'https://images.unsplash.com/photo-1581091012184-7c4c4c3e3f4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80',
+  technologies: ['Knowledge Graph', 'LLM', 'Chain-of-Thought', 'Risk Reasoning', 'NLP'],
+  featured: false,
+  type: 'product'
+},
+{
+  id: 8,
+  title: 'Intelligent Report Generator',
+  description: 'Developed a product that integrates financial report generation, risk diagnosis, and regulatory feedback using large model-driven templates and adaptive NLP techniques.',
+  image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80',
+  technologies: ['Financial NLP', 'LLM', 'Template Generation', 'Product Design'],
+  featured: false,
+  type: 'product'
+}
+
+
   ];
 
   const featuredProjects = projects.filter(project => project.featured);

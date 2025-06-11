@@ -45,13 +45,12 @@ const ContactSection: React.FC = () => {
       icon: <Mail size={20} />,
       label: 'Email',
       value: '2997718615@qq.com',
-      href: '2997718615@qq.com',
+      href: 'https://wx.mail.qq.com/',
     },
     {
       icon: <Phone size={20} />,
       label: 'Phone',
       value: '13390583326',
-      href: 'tel:+13390583326',
     },
     {
       icon: <MapPin size={20} />,
