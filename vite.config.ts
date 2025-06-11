@@ -22,4 +22,8 @@ export default defineConfig({
     port: 3000, // 本地开发服务器端口
     open: true // 启动时自动打开浏览器
   }
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 21e9e5f438c77680382bfe89672ce975b0bb1f96
