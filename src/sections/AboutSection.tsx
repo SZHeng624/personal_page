@@ -46,7 +46,7 @@ const AboutSection: React.FC = () => {
             <div className="aspect-square rounded-2xl bg-gradient-to-br from-teal-400 to-blue-500 p-1">
               <div className="w-full h-full rounded-2xl bg-gray-100 dark:bg-gray-700 overflow-hidden">
                 <img 
-                  src="https://github.com/SZHeng624/personal_page/raw/main/img/song.jpg" 
+                  src="src/assert/song.jpg" 
                   alt="Profile" 
                   className="w-full h-full object-cover object-top rounded-2xl"
                 />
