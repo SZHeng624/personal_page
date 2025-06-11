@@ -1,13 +1,13 @@
 import React from 'react';
-import { Code, Coffee, Heart, Users } from 'lucide-react';
+import { Code, Book, Heart, Users } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading';
 
 const AboutSection: React.FC = () => {
   const stats = [
-    { icon: <Code size={24} />, value: '50+', label: 'Projects Completed' },
-    { icon: <Users size={24} />, value: '30+', label: 'Happy Clients' },
-    { icon: <Coffee size={24} />, value: '1000+', label: 'Cups of Coffee' },
-    { icon: <Heart size={24} />, value: '5+', label: 'Years Experience' },
+    { icon: <Code size={24} />, value: '10+', label: 'Projects Completed' },
+    { icon: <Users size={24} />, value: '5+', label: 'Team Collaborations' },
+    { icon: <Book size={24} />, value: '20+', label: 'Courses Taken' },
+    { icon: <Heart size={24} />, value: '3+', label: 'Years of Study' },
   ];
 
   return (
@@ -15,25 +15,23 @@ const AboutSection: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <SectionHeading 
           title="About Me" 
-          subtitle="Passionate developer with a love for creating amazing digital experiences"
+          subtitle="Information Management student passionate about technology and innovation"
         />
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              I'm a passionate full-stack developer with over 5 years of experience creating 
-              beautiful, functional, and user-centered digital experiences. I love turning 
-              complex problems into simple, beautiful designs.
+              I'm Song Zhiheng, a third-year Information Management and Information Systems major at Wuhan University's School of Information Management. 
+              I'm passionate about exploring the intersection of technology and business, and how data can transform decision-making processes.
             </p>
             
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, contributing to 
-              open-source projects, or enjoying a good cup of coffee while reading about the 
-              latest trends in web development.
+              My academic journey has equipped me with solid foundations in database systems, programming, and information analysis. 
+              I'm particularly interested in web development and data analytics, and constantly seek opportunities to apply my knowledge in practical projects.
             </p>
             
             <div className="flex flex-wrap gap-3">
-              {['React', 'TypeScript', 'Node.js', 'Python', 'AWS', 'Docker'].map((tech) => (
+              {['Java', 'Python', 'SQL', 'HTML/CSS', 'JavaScript', 'Data Analysis'].map((tech) => (
                 <span 
                   key={tech}
                   className="px-3 py-1 bg-teal-100 dark:bg-teal-900 text-teal-800 dark:text-teal-200 rounded-full text-sm font-medium"
@@ -46,11 +44,11 @@ const AboutSection: React.FC = () => {
           
           <div className="relative">
             <div className="aspect-square rounded-2xl bg-gradient-to-br from-teal-400 to-blue-500 p-1">
-              <div className="w-full h-full rounded-2xl bg-gray-100 dark:bg-gray-700 flex items-center justify-center">
+              <div className="w-full h-full rounded-2xl bg-gray-100 dark:bg-gray-700 overflow-hidden">
                 <img 
-                  src="https://imgur.com/a/XJbbvZ0" 
+                  src="https://github.com/SZHeng624/personal_page/raw/main/img/song.jpg" 
                   alt="Profile" 
-                  className="w-full h-full object-cover rounded-2xl"
+                  className="w-full h-full object-cover object-top rounded-2xl"
                 />
               </div>
             </div>

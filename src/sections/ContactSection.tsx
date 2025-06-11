@@ -44,20 +44,20 @@ const ContactSection: React.FC = () => {
     {
       icon: <Mail size={20} />,
       label: 'Email',
-      value: 'john.doe@example.com',
-      href: 'mailto:john.doe@example.com',
+      value: '2997718615@qq.com',
+      href: '2997718615@qq.com',
     },
     {
       icon: <Phone size={20} />,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '13390583326',
+      href: 'tel:+13390583326',
     },
     {
       icon: <MapPin size={20} />,
       label: 'Location',
-      value: 'San Francisco, CA',
-      href: 'https://maps.google.com',
+      value: 'Wuhan University',
+      href: 'https://www.whu.edu.cn/',
     },
   ];
 
@@ -65,7 +65,7 @@ const ContactSection: React.FC = () => {
     {
       icon: <Github size={20} />,
       label: 'GitHub',
-      href: 'https://github.com',
+      href: 'https://github.com/SZHeng624',
       color: 'hover:text-gray-900 dark:hover:text-white',
     },
     {

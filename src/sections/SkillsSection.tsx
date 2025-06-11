@@ -139,28 +139,28 @@ const SkillsSection: React.FC = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-teal-500 to-blue-500 text-white rounded-full mb-4">
               <Code size={24} />
             </div>
-            <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">15+</div>
+            <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">5+</div>
             <div className="text-sm text-gray-600 dark:text-gray-400">Languages</div>
           </div>
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-full mb-4">
               <Zap size={24} />
             </div>
-            <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">25+</div>
+            <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">2+</div>
             <div className="text-sm text-gray-600 dark:text-gray-400">Frameworks</div>
           </div>
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full mb-4">
               <Database size={24} />
             </div>
-            <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">10+</div>
+            <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">2+</div>
             <div className="text-sm text-gray-600 dark:text-gray-400">Databases</div>
           </div>
           <div className="text-center">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full mb-4">
               <Cloud size={24} />
             </div>
-            <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">5+</div>
+            <div className="text-2xl font-bold text-gray-900 dark:text-white mb-1">2+</div>
             <div className="text-sm text-gray-600 dark:text-gray-400">Cloud Platforms</div>
           </div>
         </div>

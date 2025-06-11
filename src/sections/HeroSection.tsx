@@ -61,7 +61,7 @@ const HeroSection: React.FC = () => {
           </div>
           
           <div className="flex justify-center space-x-6 mb-12">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-teal-600 dark:text-gray-400 dark:hover:text-teal-400 transition-colors">
+            <a href="https://github.com/SZHeng624" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-teal-600 dark:text-gray-400 dark:hover:text-teal-400 transition-colors">
               <span className="sr-only">GitHub</span>
               <Github size={24} />
             </a>
